@@ -5,7 +5,7 @@ We use this repository for:
 
 To clone repository on your computer download GitHub Desktop https://desktop.github.com/ 
 
-## Instructions for GitHub (Mac)
+## Instructions for GitHub (Mac) (DO NOT IMPLEMENT FOR NOW)
 Brian's Instructions:
 
 To clone this repository on your local machine (Mac):
