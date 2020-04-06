@@ -25,3 +25,4 @@ graph <- make_graph( ~ A-B-C-D-A, E-A:B:C:D,
 plot(graph)
 rglplot(graph)
 tkplot(graph)
+
