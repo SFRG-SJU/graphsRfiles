@@ -1,6 +1,15 @@
 #install.packages("igraph")
 
 library(igraph)
+
+### Isomorphic planar graphs with nonisomorphic duals
+
+g1<-make_graph(~A-B-C-A,B-D,C-E,D-E-F-D)
+tkplot(g1,vertex.color='gold')
+
+
+
+######
 g <- make_lattice( c(6,6) )
 layout_on_grid(g)
 g2 <- make_lattice( c(5,5))
