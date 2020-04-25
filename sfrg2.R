@@ -29,10 +29,14 @@ tkplot(tg1, vertex.shape='circle',
 tA1<-as_adjacency_matrix(tg1)
 tA1
 
+#construct the Dartboad graph G(n,k)
+#k=number rays
+#n=number of circles
+
 #first the grid
-k<-15
+k<-5
 n<-7
-gr<- make_lattice( c(k,n) )
+gr<- make_lattice( c(k,n+1) )
 #layout_on_grid(db)
 tkplot(gr, vertex.shape='circle',
        vertex.size=15,
@@ -42,7 +46,7 @@ tkplot(gr, vertex.shape='circle',
 
 #cylinder
 ne<-c()
-for(i in 1:n){ne<-c(ne,(i-1)*k+1,i*k)}
+for(i in 1:(n+1)){ne<-c(ne,(i-1)*k+1,i*k)}
 cy<-add_edges(gr,ne)
 
 tkplot(cy, vertex.shape='circle',
