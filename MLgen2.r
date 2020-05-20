@@ -25,7 +25,7 @@ tree.congestion<-function(g,tg){
 #function for random weighted tree
 random_weighted_tree<-function(gr){
         #initializes random weights
-        w<-sample(c(1,5),50,replace=T)
+        w<-sample(c(1,10),50,replace=T)
         wg1<-gr
         #adds random weights to edges in graph
         E(wg1)$weight<-w
@@ -66,4 +66,5 @@ head(df)
 count<-table(df['V71'])
 count
 
-write.csv(df, file= 'congestion.csv')
+write.csv(df, file="~/Downloads/congestion3.csv")
+#write.csv(df, file= 'congestion.csv')
