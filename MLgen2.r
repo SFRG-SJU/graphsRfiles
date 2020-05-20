@@ -66,6 +66,4 @@ head(df)
 count<-table(df['V71'])
 count
 
-#writes csv to my downloads folder
-#path has to be tailored to different computers
-write.csv(df, file= '~/Downloads/congestion.csv')
+write.csv(df, file= 'congestion.csv')
