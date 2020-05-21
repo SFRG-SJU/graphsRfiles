@@ -32,8 +32,8 @@ model %>%
 #cant get this to work
 model %>% fit(
  train, 
- epochs = 100, 
- batch_size = 5,
+ epochs = 10, 
+ batch_size = 32,
  validation_split = 0.3
 )
 
