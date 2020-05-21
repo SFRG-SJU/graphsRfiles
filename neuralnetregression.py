@@ -58,7 +58,7 @@ print("Congestion 2 Baseline: %.2f (%.2f) MSE" % (results2.mean(), results2.std(
 print("Congestion 3 Baseline: %.2f (%.2f) MSE" % (results3.mean(), results3.std()))
 
 
-#c reate larger model
+# create larger model
 def larger_model():
 	# create model
 	model = Sequential()

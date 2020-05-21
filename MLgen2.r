@@ -2,9 +2,11 @@ library(igraph)
 library(dplyr)
 
 
-#create graph to use
+#create graph to use with 20 vertices and 50 edges
 g1<- sample_gnm(20, 50)
-
+tkplot(g1, vertex.shape='circle',
+       vertex.size=15,
+       vertex.color='gold')
 
 #function to calculate congestion for individual edge
 edg.congestion<-function(g,tg,ed){
@@ -50,7 +52,6 @@ for (i in 1:500) {
         df[i,] <- vec
 }
 
-#DONT RUN UNTIL PREVIOUS LOOP COMPLETES
 #determines whether congenstion is small (1) or large (0)
 for (i in 1:500) {
         if (df[i, 70] < 18) {
@@ -66,5 +67,4 @@ head(df)
 count<-table(df['V71'])
 count
 
-write.csv(df, file="~/Downloads/congestion3.csv")
-#write.csv(df, file= 'congestion.csv')
+write.csv(df, file= 'congestion3.csv')
